@@ -45,3 +45,23 @@ assignShift("Andy", "Monday", 5);
 assignShift("William", "Wednesday", 8);
 // Function displayed accurate output and messages. 
 // Task 3 is now complete. 
+
+// Task 4: Create a Function to Calculate Total Hours Worked
+function calculateTotalHours(employeeName){let employee;
+for (let staffMember of employees) {
+if (staffMember.name === employeeName) {
+employee = staffMember;
+let totalHours = 0;
+// Function starts with a bse of 0 to represent 0 hours of work as a base, then adds hours. 
+for (let shift of employee.shifts) {
+totalHours =+ shift.hours;}
+console.log(employeeName + " worked " + totalHours + " hours during this week.");
+// Message created to be displayed to represent amount of hours worked per employee for the week. 
+return;}}}
+// Function is now complete, not yet tested. 
+calculateTotalHours("Ayla");
+calculateTotalHours("Andy");
+calculateTotalHours("Liam");
+calculateTotalHours("William");
+// Function has now been tested and released accurate data. 
+// Task 4 is now complete. 
