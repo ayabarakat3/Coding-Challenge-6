@@ -62,6 +62,6 @@ return;}}}
 calculateTotalHours("Ayla");
 calculateTotalHours("Andy");
 calculateTotalHours("Liam");
-calculateTotalHours("William");
+calculateTotalHours("William"); 
 // Function has now been tested and released accurate data. 
 // Task 4 is now complete. 
