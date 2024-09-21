@@ -65,3 +65,31 @@ calculateTotalHours("Liam");
 calculateTotalHours("William"); 
 // Function has now been tested and released accurate data. 
 // Task 4 is now complete. 
+
+// Task 5: Create a Function to List Employees with Free Days
+function listAvailableEmployees(days) {
+let unscheduledEmployees = [];
+// Array created to display the names of the unscheduled employees. 
+for (let staffMember of employees) {
+let isAvailable = true;
+// Functions are set to ensure the code goes through every employees schedule to figure out when the employees aren't working.  
+for (let shift of staffMember.shifts) {
+if (shift.day === days) {
+isAvailable = false;}}
+if (isAvailable) {
+unscheduledEmployees.push(staffMember.name);}}
+// Now we will set the function to ensure it displays desired output. 
+console.log("Unscheduled employees on " + days + ": ");
+for (let name of unscheduledEmployees) {
+console.log(name);}}
+// Function complete, but not yet tested. 
+listAvailableEmployees("Monday");
+listAvailableEmployees("Tuesday");
+listAvailableEmployees("Wednesday");
+listAvailableEmployees("Thursday");
+listAvailableEmployees("Friday");
+listAvailableEmployees("Saturday");
+listAvailableEmployees("Sunday");
+// The function has now been tested to display all unscheduled employees on all days of the week. 
+// Task 5 has now been complete. 
+// All tasks have been completed and tested. 
